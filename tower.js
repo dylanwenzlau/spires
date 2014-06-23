@@ -29,7 +29,7 @@ levels = [];
 /*levels[0] = {};
 levels[0].lives = 10;
 levels[0].bg = new Image();
-levels[0].bg.src = "back1.png";
+levels[0].bg.src = "img/back1.png";
 levels[0].gold = 2000;
 //levels[0].towerTypes = [Tower, LightTower, IceTower, FireTower];
 //levels[0].route = [[618,151],[527,105],[421,80],[316,67],[223,94],[156,159],[166,195],[193,224],[294,231],[373,222],[458,204],[509,209],[538,231],[547,270],[532,308],[486,333],[431,341],[342,343],[171,372],[84,405],[43,445],[33,464]];
@@ -43,7 +43,7 @@ for (var j=0; j<12; j++){
 	levels[j] = {};
 	levels[j].lives = 10;
 	levels[j].bg = new Image();
-	levels[j].bg.src = "back1.png";
+	levels[j].bg.src = "img/back1.png";
 	levels[j].gold = 1000 + j*100;
 	//levels[j].route = [[660,240],[540,100],[430,240],[430,400],[320,400],[320,80],[210,80],[210,240],[-10,240]];
 	levels[j].route = [[486,-20],[464,38],[440,66],[425,103],[421,162],[426,191],[423,240],[427,286],[424,335],[418,385],[391,411],[345,418],[311,390],[294,361],[304,318],[330,280],[324,247],[322,190],[318,153],[318,103],[298,79],[254,70],[215,79],[180,104],[168,130],[175,169],[168,200],[164,239],[140,266],[108,281],[54,291],[-20,298]];
@@ -810,7 +810,7 @@ function Level(id){
 	T.power = false;
 	for (var i=0; i<4; i++){
 		T.img[i] = new Image();
-		T.img[i].src = "pellet"+i+".png";
+		T.img[i].src = "img/pellet"+i+".png";
 	}
 	T.tick = function tick(){
 		var t = this;
@@ -876,7 +876,7 @@ function Level(id){
 	I.img = [];
 	for (var i=0; i<4; i++){
 		I.img[i] = new Image();
-		I.img[i].src = "ice"+i+".png";
+		I.img[i].src = "img/ice"+i+".png";
 	}
 	I.tick = function(){
 		var t = this;
@@ -913,7 +913,7 @@ function Level(id){
 	F.img = [];
 	for (var i=0; i<4; i++){
 		F.img[i] = new Image();
-		F.img[i].src = "fire"+i+".png";
+		F.img[i].src = "img/fire"+i+".png";
 	}
 	F.tick = function tick(){
 		var t = this;
@@ -1067,7 +1067,7 @@ function Level(id){
 		L.img = [];
 		for (var i=0; i<4; i++){
 			L.img[i] = new Image();
-			L.img[i].src = "light"+i+".png";
+			L.img[i].src = "img/light"+i+".png";
 		}
 		L.zap = function(){
 			var t = this;
