@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!--<link rel="stylesheet" href="/style14.css" type="text/css" media="screen"/>-->
+	<title>Tower</title>
+</head>
+
+<body style="padding:0;margin:0;">
+	<h2 id="fps" style="line-height:30px;height:30px;text-align:center;margin:0 auto;padding:0;"></h2>
+	<!--<button onclick="new Mob(60,100,10);">Mob</button>
+	<button onclick="wave = setInterval('new Mob(50,150,18)', 1000)">Wave</button>
+	<button onclick="pause()">Pause</button>
+	<button onclick="started = 1;">Start</button>-->
+	<div id="wrap" style="margin:0px auto;position:relative;width:640px;height:480px;">
+		<canvas id="backCanv" width="640" height="480" style="position:absolute;z-index:1;top:0;left:0;"></canvas>
+		<canvas id="canv" width="640" height="480" style="position:absolute;z-index:2;top:0;left:0;"></canvas>
+	</div>
+	
+	<script src="tower.js"></script>
+</body>
+</html>
